@@ -61,6 +61,13 @@ header nav ul li a:hover {
     color: white;
     background-color: var(--secondary-color);
 }
+.hero {
+    display: flex;
+    background-image: url("../images/hero-img.jpg");
+    background-size: cover;
+    background-position: center;
+
+}
 #container {
     display: flex;
     flex-direction: column;
@@ -80,5 +87,5 @@ section h2 {
     margin-bottom: 10px;
     margin-right: 20px;
     border-right: 3px solid var(--secondary-color);
-    width: 30%;
+    width: 20%;
 }
