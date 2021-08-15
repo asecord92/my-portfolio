@@ -8,6 +8,7 @@ body {
     color: var(--secondary-color);
     font-family: Consolas, monaco, monospace;
     background-color: var(--primary-color);
+    margin-bottom: 50px;
 }
 :root {
     --primary-color: #101820;
@@ -58,15 +59,12 @@ header nav ul li a {
     border-radius: 15px;
 }
 
-header nav ul li a:hover {
-    color: white;
-    background-color: var(--secondary-color);
-}
 .hero {
     display: flex;
     background-image: url("../images/hero-img.jpg");
     background-size: cover;
     background-position: center;
+    width: 100%;
     height: 700px;
     display: flex;
     justify-content: left;
@@ -76,13 +74,12 @@ header nav ul li a:hover {
 .hero-sub {
     padding-bottom: 50px;
     padding-left: 10px;
-    opacity: 100%;
     font-size: 20px;
-    font-style: italic
+    font-style: italic;
 }
 #container {
     display: flex;
-    flex-direction: column;
+    flex-direction: column
 }
 
 section {
@@ -93,11 +90,164 @@ section {
 
 section h2 {
     font-weight: bold;
-    font-size: 36px;
+    font-size: 48px;
     text-align: right;
     padding-right: 12px;
     margin-bottom: 10px;
     margin-right: 20px;
     border-right: 3px solid var(--secondary-color);
     width: 20%;
+    margin-top: 0px;
+    padding-top: 0;
+}
+#about-me {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    width: 100%;
+}
+#work {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 20px;
+}
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+    padding-left: 20px;
+}
+.run-buddy {
+    position: relative;
+    text-align: right;
+   
+    margin-right: 100px;
+}
+
+.run-buddy img {
+    width:1200px;
+    height: 300px;
+    border: 3px solid var(--secondary-color);
+    margin-bottom: 10px;
+
+}
+
+.horiseon {
+    position: relative;
+    text-align: left; 
+    margin-right: 10px;
+}
+
+.horiseon img {
+    width: 590px;
+    height: 150px;
+    margin-bottom: 10px;
+    border: 3px solid var(--secondary-color);
+}
+
+.coming-soon {
+    position: relative;
+    text-align: left;
+    margin-left: 10px;
+    
+}
+.coming-soon img {
+    width: 590px;
+    height: 150px;
+    margin-bottom: 10px;
+    border: 3px solid var(--secondary-color);
+    
+}
+
+.project-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.type {
+    position: absolute;
+    bottom: 20px;
+    left: 3px;
+    background-color: var(--primary-color);
+}
+
+#contact-me {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 20px;
+}
+.con-inf {
+   display: flex;  
+   flex-wrap: wrap;
+}
+.con-inf div {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.con-inf a {
+    text-decoration: underline;
+    color: var(--secondary-color);
+    font-size: 1.0vw;
+    
+}
+
+#resume {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.link a {
+    text-decoration: underline;
+    color: var(--secondary-color);
+    font-size: 1.0vw;
+    margin-left: 100px;
+    
+}
+
+/*psuedo classes */
+
+header nav ul li a:hover {
+    color: white;
+    background-color: var(--secondary-color);
+}
+
+.run-buddy img:not(:hover) {
+    background-color: var(--primary-color);
+    opacity: 0.1;
+}
+   
+.horiseon img:not(:hover) {
+    background-color: var(--primary-color);
+    opacity: 0.1;
+}
+
+.coming-soon img:not(:hover) {
+    background-color: var(--primary-color);
+    opacity: 0.1;
+}
+
+.con-inf a:hover {
+    color: white;
+    background-color: var(--secondary-color);
+}
+
+.link a:hover {
+    color: white;
+    background-color: var(--secondary-color);
+}
+
+/* Media Query */
+
+@media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
 }
