@@ -7,6 +7,7 @@
 body {
     color: var(--secondary-color);
     font-family: Consolas, monaco, monospace;
+    background-color: var(--primary-color);
 }
 :root {
     --primary-color: #101820;
@@ -66,7 +67,18 @@ header nav ul li a:hover {
     background-image: url("../images/hero-img.jpg");
     background-size: cover;
     background-position: center;
+    height: 700px;
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
 
+}
+.hero-sub {
+    padding-bottom: 50px;
+    padding-left: 10px;
+    opacity: 100%;
+    font-size: 20px;
+    font-style: italic
 }
 #container {
     display: flex;
