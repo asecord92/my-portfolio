@@ -61,11 +61,10 @@ header nav ul li a {
 
 .hero {
     display: flex;
-    background-image: url("../images/hero-img.jpg");
+    background-image: url("../images/hero2.jpg");
+    height: 700px;
     background-size: cover;
     background-position: center;
-    width: 100%;
-    height: 700px;
     display: flex;
     justify-content: left;
     align-items: flex-end;
@@ -102,9 +101,19 @@ section h2 {
 }
 #about-me {
     display: flex;
-    justify-content: left;
+    justify-content: space-between;
     align-items: flex-start;
     width: 100%;
+    margin-top: 30px;
+    align-items: stretch;
+    
+}
+.description {
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+    padding-right: 100px;
+    text-align: left;
 }
 #work {
     display: flex;
@@ -112,12 +121,13 @@ section h2 {
     align-items: flex-start;
     width: 100%;
     margin-top: 20px;
+    align-items: stretch;
 }
 .projects {
     display: flex;
     flex-wrap: wrap;
     width: 75%;
-    padding-left: 20px;
+    padding-left: 0px;
 }
 .run-buddy {
     position: relative;
@@ -134,26 +144,15 @@ section h2 {
 
 }
 
+.coming-soon,
 .horiseon {
     position: relative;
-    text-align: left; 
-    margin-right: 10px;
-}
-
-.horiseon img {
-    width: 590px;
-    height: 150px;
-    margin-bottom: 10px;
-    border: 3px solid var(--secondary-color);
-}
-
-.coming-soon {
-    position: relative;
     text-align: left;
-    margin-left: 10px;
+    margin-right: 20px;
     
 }
-.coming-soon img {
+.coming-soon img,
+.horiseon img {
     width: 590px;
     height: 150px;
     margin-bottom: 10px;
@@ -179,10 +178,13 @@ section h2 {
     align-items: flex-start;
     width: 100%;
     margin-top: 20px;
+    align-items: stretch;
 }
-.con-inf {
+.con-inf,
+.link {
    display: flex;  
    flex-wrap: wrap;
+   align-items: center;
 }
 .con-inf div {
     margin-left: 100px;
@@ -200,6 +202,7 @@ section h2 {
     justify-content: left;
     align-items: flex-start;
     width: 100%;
+    align-items: stretch;
 }
 
 .link a {
@@ -250,4 +253,58 @@ header nav ul li a:hover {
         justify-content: center;
         position: relative;
     }
+
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+    }
+    .hero-sub {
+        font-size: 12px;
+    }
+
+    section h2 {
+        font-size: 24px;
+    }
+    #about-me {
+        justify-content: flex-start;
+    }
+    .description {
+        width: 80%;
+        padding-left: 30px;
+        
+    }
+
+    .description {
+        font-size: 12px;
+    }
+    .run-buddy img {
+        width:600px;
+        height: 300px;
+        border: 3px solid var(--secondary-color);
+        margin-bottom: 10px;
+    
+    }
+    .horiseon img,
+    .coming-soon img {
+        width: 600px;
+        height: 150px;
+        border: 3px solid var(--secondary-color);
+        margin-bottom: 10px;
+    }
+    .coming-soon,
+    .horiseon {
+        margin-left: 0px;
+    }
 }
+    
+  
